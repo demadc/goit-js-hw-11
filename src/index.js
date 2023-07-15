@@ -30,4 +30,22 @@
 import axios from 'axios';
 import Notiflix from 'notiflix';
 
-//API_KEY  38277598-05a082c915074d2caf7c5aa6f
+const API_KEY = '38277598-05a082c915074d2caf7c5aa6f';
+const BASE_URL = 'https://pixabay.com/api/';
+const query = input.value;
+
+new URLSearchParams({
+  q: query,
+  image_type: 'photo',
+  orientation: 'horizontal',
+  safesearch: 'true',
+  page: 1,
+  per_page: 40,
+});
+
+const refs = {
+  selectEl: document.querySelector('.breed-select'),
+  contentEl: document.querySelector('.cat-info'),
+  loaderEl: document.querySelector('.loader'),
+  errorEl: document.querySelector('.error'),
+};
