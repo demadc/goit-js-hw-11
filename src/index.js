@@ -28,7 +28,9 @@
 // Для повідомлень використовуй бібліотеку notiflix.
 
 import axios from 'axios';
-import Notiflix from 'notiflix';
+axios.defaults.headers.common['key'] = API_KEY;
+//import Notiflix from 'notiflix';
+// import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const API_KEY = '38277598-05a082c915074d2caf7c5aa6f';
 const BASE_URL = 'https://pixabay.com/api/';
@@ -38,7 +40,7 @@ new URLSearchParams({
   q: query,
   image_type: 'photo',
   orientation: 'horizontal',
-  safesearch: 'true',
+  safesearch: true,
   page: 1,
   per_page: 40,
 });
