@@ -19,17 +19,37 @@
       <form class="search-form" id="search-form">
         <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
         <button class="search-form-btn" type="submit">
-          <svg class="search" width="20" height="20">
-            <use class="icon-search" href="./images/"></use>
+          <svg class="search" width="20" height="20" aria-label="search">
+            <use class="icon-search" href="./images/symbol-defs.svg#icon-search"></use>
           </svg> 
           Search
         </button>
       </form>
     </div>
   </header>
+
+<!-- GALLERY  -->
+  <section class="photo-gallery container">
+     <!-- smoth scroll -->
+    <div class="btn-up">
+      <p class="btn-up-text">UP</p>
+      <button class="btn-up-wrapper__btn" id="to-top-btn" title="Go to top">
+        <svg class="icon-arrow" width="20" height="20" aria-label="right">
+          <use class="arrow" href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+        <svg class="icon-arrow" width="20" height="20" aria-label="left">
+          <use class="arrow" href="./images/symbol-defs.svg#icon-left-arrow"></use>
+        </svg>
+      </button>
+    </div>
+
+  </section>
+
     <div class="gallery">
       <!-- Картки зображень -->
     </div>
+
     <button type="button" class="load-more is-hidden">Load more</button>
+
   </body>
 </html>
