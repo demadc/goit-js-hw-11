@@ -17,8 +17,8 @@
   <header class="header">
     <div class="container header-container">
       <form class="search-form" id="search-form">
-        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-        <button class="search-form-btn" type="submit">
+        <input class="search-form-input" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button class="search-form-btn" type="submit" name="submitQuery">
           <svg class="search" width="20" height="20" aria-label="search">
             <use class="icon-search" href="./images/symbol-defs.svg#icon-search"></use>
           </svg> 
@@ -32,15 +32,18 @@
   <section class="photo-gallery container">
      <!-- smoth scroll -->
     <div class="btn-up">
-      <p class="btn-up-text">UP</p>
-      <button class="btn-up-wrapper__btn" id="to-top-btn" title="Go to top">
-        <svg class="icon-arrow" width="20" height="20" aria-label="right">
+      <button class="btn-left-wrapper">
+        <svg class="icon-arrow-left" width="20" height="20" aria-label="left">
+        <use class="arrow" href="./images/symbol-defs.svg#icon-left-arrow"></use>
+      </svg>
+      </button>
+      <button class="btn-right-wrapper">
+        <svg class="icon-arrow-right" width="20" height="20" aria-label="right">
           <use class="arrow" href="./images/symbol-defs.svg#icon-arrow"></use>
         </svg>
-        <svg class="icon-arrow" width="20" height="20" aria-label="left">
-          <use class="arrow" href="./images/symbol-defs.svg#icon-left-arrow"></use>
-        </svg>
       </button>
+
+      
     </div>
 
   </section>
